@@ -2,7 +2,7 @@ import axios from "axios";
 import { GetToken } from "../utils/GetToken";
 
 const axiosInstance = axios.create({
-    baseURL: process.env.REACT_APP_BASE_URL || "http://localhost:8000",
+    baseURL: process.env.REACT_APP_BASE_URL || "https://zoxx-app-api.vercel.app",
     headers: {
         "Content-Type": "application/json",
     }
