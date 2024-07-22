@@ -21,6 +21,10 @@ app.use(cookieParser())
 
 const port = process.env.PORT || 8000
 
+app.get("/",(req,res)=>{
+    res.json("Hello World")
+})
+
 app.use("/user",userRouter)
 app.use("/post",auth,postRouter)
 
