@@ -7,7 +7,7 @@ const auth = async (req,res,next) => {
         const { authorization } = req.headers;
         const [bearer, token] = authorization?.split(" ")
         
-        const verifyToken = jwt.verify(token,"ZOXX_SECRET_KEY")
+        const verifyToken = jwt.verify(token, process.env.JWT_SECRET_KEY || "ZOXX_SECRET_KEY")
         const user = await Users.findOne({_id:verifyToken.id})
         console.log(user)
         if(!user){
