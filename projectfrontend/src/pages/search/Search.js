@@ -84,8 +84,8 @@ function Search() {
             }}
           >
             <img
-              style={{ width: "100%", height: "100%" }}
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3flIHsvZtK3eU7tEnp-LSEjNznTZCn0dkcA&s"
+              style={{ width: "100%", height: "100%",objectFit:"cover" }}
+              src={e?.url || "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3flIHsvZtK3eU7tEnp-LSEjNznTZCn0dkcA&s"}
             ></img>
           </div>
           <div
